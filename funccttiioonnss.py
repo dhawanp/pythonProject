@@ -59,5 +59,5 @@ sum1=decor_sum(add)
 print(sum1)
 
 '''
-Interview Question
+Interview Questions
 '''
