@@ -26,6 +26,7 @@ Self keyword in above code is used to represent the current object
 The First method to be executed when the object is created is Constructor
 The main purpose of the constructor is to initialize the instance variable
 The name of the constructor starts from __init__(self)
+self variable points to current object of the class
 '''
 class Student:
     def __init__(self,roll,name,standard):
@@ -36,7 +37,19 @@ class Student:
     def dispMarks(self):
         print(f"The Roll Number of the Student is :{self.rollnumber}")
         print(f"The Name of the Student is:{self.name}")
-        print(f"The Standard of the student is:{self.stan}")
-st1=Student(int(input("Enter the Roll number:")),input("Enter the Name of the Student:"),int(input("Enter the Standard:")))
-print("Address of the object pointing to student class is:",id(st1))
-st1.dispMarks()
+        print(f"The Standard of the student is:{self.stan}\n")
+# st1=Student(int(input("Enter the Roll number:")),input("Enter the Name of the Student:"),int(input("Enter the Standard:")))
+# print("Address of the object pointing to student class is:",id(st1))
+# st1.dispMarks()
+
+
+obj1=[]
+nos=int(input("Enter the number of records of students which you would like to feed into the system:"))
+for i in range(nos):
+    roll=int(input("Enter the roll no.:"))
+    name=input("Enetr the name of the student:")
+    standard=int(input("Enter the standard:"))
+    obj1.append(Student(roll,name,standard))
+for j in range(nos):
+    obj1[i].dispMarks()
+
