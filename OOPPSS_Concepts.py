@@ -51,5 +51,25 @@ for i in range(nos):
     standard=int(input("Enter the standard:"))
     obj1.append(Student(roll,name,standard))
 for j in range(nos):
-    obj1[i].dispMarks()
+    obj1[j].dispMarks()
+'''
+Inheritance and super keyword
+'''
+class Base:
+    def __init__(self,name,age):
+        print("This is a parent class constructor")
+        self.name=name
+        self.age=age
+        print(f"Name={self.name},age={self.age}")
+    def method1(self):
+        print("This is parent class dummy method")
+class Derived(Base):
+    def __init__(self,name,age):
+        print("This is child class's constructor method")
+        super().__init__(name,age)
+    def method2(self):
+        print("This is a child class dummy method")
+d=Derived('PRATEEK',16)
+d.method1()
+d.method2()
 
