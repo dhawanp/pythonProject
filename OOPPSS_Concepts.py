@@ -54,6 +54,8 @@ for j in range(nos):
     obj1[j].dispMarks()
 '''
 Inheritance and super keyword
+When the parent and the child class have a method with same name , then we have super() for our rescue
+super() function is used to call methods of parent class
 '''
 class Base:
     def __init__(self,name,age):
