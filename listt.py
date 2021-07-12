@@ -13,9 +13,14 @@
 # print(list)
 # list.insert(0,33)
 # print(list)
-# list.remove(33)
+# (list.remove(33))
 # print(list)
-# list.pop(0)
+# '''
+# POP
+# If the argument is not passed then by default it removes the last element that is a list[-1]
+# The pop() method removes the item at the given index from the list and returns  the removed item.
+# '''
+# print(list.pop(0))
 # print(list)
 # print(id(list))
 # a=[1,2,3,4,5]
@@ -77,16 +82,21 @@
 # list3[4]=list3[0]
 # list3[0]=tmp
 # print(list3)
-#
-#
+
+
+'''
+Program to create a list dynamically , and swap the first and the last elements
+'''
+
 # li4=[]
 # n=int(input("Enter the number of elements to be inserted in the list:"))
 # for i in range(n):
-#     ele=[input(),int(input())]
+#     ele=input(),int(input())
 #     li4.append(ele)
 # print(li4)
 #
 # size=len(li4)
+# print(size)
 # li4[0] , li4[size-1] = li4[size-1] ,li4[0]
 # print(li4)
 #
@@ -110,9 +120,9 @@
 #         min1=li6[j]
 # print(min1)
 #
-# '''
-# Program to find the occurrence of a digit in a particular list
-# '''
+'''
+Program to find the occurrence of a digit in a particular list
+'''
 # li7=[]
 # n=int(input("Enter the number of elements to be included in the list-"))
 # for i in range(n):
@@ -129,5 +139,59 @@
 '''
 Using the list() constructor to make a List
 '''
-thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
-print(thislist)
+# thislist = list(("apple", "banana", "cherry","pine"))
+# print(thislist)
+# li=[9,7,5,3,1,2,4,6,8,0]
+# #print(sorted(li))
+# li.sort()
+# print(li)
+# li.remove(8)
+# print(li)
+# li.pop(4)
+# print(li)
+# li.insert(3,"abc")
+# print(li)
+# #li.sort()
+# print(li)
+# '''
+# Removal of other elements from a list and adding some other elements in the same list
+# In this example If I would have used li[1:2]=[99,100] , it would have just replaces element at index 1 , but on using li[1:4]=[99,100] , it removed
+# element at index 1 ,2,3 and inserted 99 , 100 values there
+# '''
+# li[1:4]=[99,100]
+# print(li)
+'''
+Program to swap first and the last elemnts in a list
+'''
+# li9=[]
+# n=int(input("Enter the number of elements to be included in the list"))
+# for i in range(n):
+#     elements=int(input())
+#     li9.append(elements)
+# print(li9)
+# size=len(li9)
+# li9[0] , li9[size-1] = li9[size-1] , li9[0]
+# print(li9)
+
+# NORMAL LIST FEATURES AND FUNCTIONALITIES
+li10=[1,2,3,4,5,6,7,8,9]
+print(li10)
+li10.append(10)
+print(li10)
+li10.insert(3,33)
+print(li10)
+li10.insert(5,33)
+print(li10)
+li10.remove(33) #Notice how remove() removes just the first match of the object it is trying to remove
+print(li10)
+print(li10)
+li10.insert(3,77)
+print(li10)
+print(li10.pop(3))
+print(li10)
+li10.append(77)
+print(li10)
+del li10[10]
+print(li10)
+
+
