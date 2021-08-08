@@ -40,24 +40,31 @@ DECORATORS
 
 A function as an argument to another function is called as a decorator
 '''
-def decor_sum(func):
-    def dec(x,y):
-        print('#'*20)
-        print("Sum:",end='')
-        func(x,y)
-        print('#'*20)
-    return dec
-
-@decor_sum
-def add(a,b):
-    print(a+b)
-
-a=int(input("Enter the value of a:"))
-b=int(input("Enter the value of b:"))
-add(a,b)
-sum1=decor_sum(add)
-print(sum1)
+# def decor_sum(func):
+#     def dec(x,y):
+#         print('#'*20)
+#         print("Sum:",end='')
+#         func(x,y)
+#         print('#'*20)
+#     return dec
+#
+# @decor_sum
+# def add(a,b):
+#     print(a+b)
+#
+# a=int(input("Enter the value of a:"))
+# b=int(input("Enter the value of b:"))
+# add(a,b)
+# sum1=decor_sum(add)
+# print(sum1)
 
 '''
 Interview Questions
 '''
+def funcy(*x ,y):
+    print(x)
+    print(y)
+# funcy(1,2) #Will Throw Error
+# funcy(1,2,3,4,5,6,7,8,9) #Will Throw Error
+funcy(1,y=2)
+funcy(1,2,3,4,5,6,7,8,y=9)

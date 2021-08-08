@@ -21,8 +21,10 @@ In addition you can specify if the file should be handled as binary or text mode
 "b" - Binary - Binary mode (e.g. images)
 '''
 
-f=open("C:\\Users\\windows\\Desktop\\1.txt","rt")
-# print(f.read())
+f=open("C:\\Users\\windows\\Desktop\\1.txt","a")
+f.write("Now the file has more contents")
+f=open("C:\\Users\\windows\\Desktop\\1.txt")
+print(f.read())
 
 #To read only [arts of the file use the following example-:
 
@@ -30,7 +32,7 @@ f=open("C:\\Users\\windows\\Desktop\\1.txt","rt")
 
 
 #To read only single line of the file use readline(). You can use readline() as many times as you want , in-order to read those particular number of lines
-print(f.readline())
+# print(f.readline())
 
 
 # Close Files

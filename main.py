@@ -70,5 +70,12 @@ def myfunc1():
 
 print(myfunc1())
 
+i=0
+for i in range(0,6):
+    i+=1
+    if(i==3):
+        continue
+    print(i)
 
+# Stop the loop if i is equals to 3
 

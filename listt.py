@@ -161,7 +161,7 @@ Using the list() constructor to make a List
 # li[1:4]=[99,100]
 # print(li)
 '''
-Program to swap first and the last elemnts in a list
+Program to swap first and the last elements in a list
 '''
 # li9=[]
 # n=int(input("Enter the number of elements to be included in the list"))
@@ -195,3 +195,26 @@ del li10[10]
 print(li10)
 
 
+'''
+Program to find the first and last element in a string and then exchange/swap them and print the new string
+this can be achieved using split() and .join() functions
+'''
+string="Soham is a buddhu boy"
+print(string)
+z=string.split()
+print(z)
+first_ele=z[0]
+print(first_ele)
+last_ele=z[-1]
+print(last_ele)
+size=len(z)
+z[0] , z[size-1] = z[size-1] , z[0]
+new_String=' '.join(z)
+print(new_String)
+
+
+
+
+#Check if all items in a list are True:
+mylist = [True, True, True]
+x = all(mylist)
