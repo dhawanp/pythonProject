@@ -26,7 +26,7 @@ f.write("Now the file has more contents")
 f=open("C:\\Users\\windows\\Desktop\\1.txt")
 print(f.read())
 
-#To read only [arts of the file use the following example-:
+#To read only parts of the file use the following example-:
 
 # print(f.read(12))
 
